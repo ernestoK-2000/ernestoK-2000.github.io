@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --primary-color: rgb(163, 28, 46);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar{
+    /*box-shadow: 0 -1px 7px -1px #111;*/
+    width: 100%;
+    position: fixed;
+    font-family: Ubuntu, san-serif;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.navbar.sticky{
+    background-color: crimson;
+    padding: 15px 0;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 7vw 0 10vw;
+    margin: auto;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    min-width: 100vw;
+}
+
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 2px 5px black;
+}
+
+.navbar .logo a span{
+    color: crimson;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-shadow: 1px 1px 3px black;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+    text-shadow: 1px 1px 10px black;
+    
+}
+
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+/* menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px black;
+    display: none;
+    margin-right: 10px;
+}
+
+
+
+/* Home section styling */
+.home{
+    display: flex;
+    height: 100vh;
+    background-image: url("img/banner-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    color: #fff;
+    text-shadow: 2px 2px 5px black;
+    z-index: -1;
+    font-family: Ubuntu, san-serif;
+}
+
+.home .max-width{
+    margin:auto 0 auto 0px
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    
+}
+
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+
+.home .home-content a{
+    text-shadow: none;
+    box-shadow: 0px 0px 3px black;
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    background-color: transparent;
+    text-shadow: 1px 1px 3px black;
+    color: crimson;
+    font-size: 27px
+}
+
+
+
+/* About section styling */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: Poppins, sans-serif;
+}
+
+.about .title{
+    position: relative;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    font-weight: 500;
+    
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background-color: #111;
+    left: 50%;
+    bottom: -17px;
+    transform: translateX(-50%);
+}
+
+.about .title::after{
+    content: "who I am";
+    position: absolute;
+    padding: 5px;
+    background-color: white;
+    color: crimson;
+    font-size: 20px;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+}
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/*.about .about-content .column{
+    width: 50%;
+}*/
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    color: crimson;
+   
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
+
+.about .about-content .right a{
+    text-shadow: none;
+    box-shadow: 0px 0px 1px black;
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 20px;
+    padding: 7px 30px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+
+
+.about .about-content .right a:hover{
+    background-color: transparent;
+    color: crimson;
+    font-size: 22px;
+}
+
+/* responsive navbar */
+@media (max-width: 1200px){
+    .about .about-content .left img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 1050px){
+    .about .about-content .left img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 900px){
+    .home .max-width{
+        margin-left: 0;
+    }
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn:hover{
+        text-shadow: 1px 1px 10px black;
+    }
+
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.4s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 35px;
+        
+    }
+    .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 50px;
+    }
+
+    .about .about-content .column{
+        width: 100%;
+    }
+
+    .about-content .right{
+        flex: 100%;
+    }
+    
+    
+}
+
+@media (max-width: 450px){
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 350px){
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}

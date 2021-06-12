@@ -21,7 +21,7 @@ body{
 }
 
 .page-container{
-    padding-top: 70px;
+    padding-top: 150px;
     padding-bottom: 80px;
     display: flex;
     justify-content: center;
@@ -136,6 +136,10 @@ h1{
 
 
 @media (max-width: 950px){
+    .page-container{
+        padding-top: 70px;
+    }
+
     .image-container{
         position: relative;
         width: 100%;

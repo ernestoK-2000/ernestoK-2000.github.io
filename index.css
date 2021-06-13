@@ -306,7 +306,7 @@ section{
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
-    cursor: pointer;
+    
     box-shadow: 2px 2px 5px black;
 } 
 
@@ -330,6 +330,9 @@ section{
 }
 
 @media (hover: hover) and (pointer: fine){
+    .services .serv-content .card{
+        cursor: pointer;
+    }
     .scroll-up-btn.show:hover{
         cursor: pointer;
         opacity: 1;

@@ -3,11 +3,8 @@
 :root{
     --primary-color: rgb(163, 28, 46);
 }
-:active{
-    text-decoration: none;
-    outline: none;
-    background-color: inherit;
-}
+
+
 
 *{
     margin: 0;
@@ -353,10 +350,13 @@ section{
 .services .serv-content .card{
     transition: all 0.3s ease;
 }
+
+@media (hover: hover){
 .services .serv-content .card:hover{
     background-color: crimson;
     box-shadow: 4px 4px 10px black;
     transform: scale(1.05);
+}
 }
 
 .services .serv-content .card:hover i{

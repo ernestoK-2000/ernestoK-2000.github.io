@@ -36,10 +36,7 @@ html{
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show:hover{
-    cursor: pointer;
-    opacity: 1;
-}
+
 .scroll-up-btn.show{
     opacity: 1;
     bottom: 20px;
@@ -107,16 +104,6 @@ html{
     transition: all 0.3s ease;
 }
 
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-    text-shadow: 1px 1px 5px black;
-    
-}
-
-.navbar .menu li a:hover{
-    color: crimson;
-    transform: scale(1.05);
-}
 
 /* menu btn styling */
 .menu-btn{
@@ -194,12 +181,7 @@ html{
     
 }
 
-.home .home-content a:hover{
-    background-color: transparent;
-    text-shadow: 1px 1px 3px black;
-    color: crimson;
-    transform: scale(1.05);
-}
+
 
 /* All similar content styling code */
 section .title{
@@ -297,11 +279,7 @@ section{
     font-weight: 500;
 }
 
-.about .about-content .right a:hover{
-    background-color: transparent;
-    color: crimson;
-    transform: scale(1.05);
-}
+
 
 /* Services section styling */
 .services{
@@ -351,17 +329,53 @@ section{
     transition: all 0.3s ease;
 }
 
-@media (hover: hover){
-.services .serv-content .card:hover{
-    background-color: crimson;
-    box-shadow: 4px 4px 10px black;
-    transform: scale(1.05);
-}
+@media (hover: hover) and (pointer: fine){
+    .scroll-up-btn.show:hover{
+        cursor: pointer;
+        opacity: 1;
+    }
+    .navbar.sticky .menu li a:hover{
+        color: #fff;
+        text-shadow: 1px 1px 5px black;
+        
+    }
+    
+    .navbar .menu li a:hover{
+        color: crimson;
+        transform: scale(1.05);
+    }
+    .home .home-content a:hover{
+        background-color: transparent;
+        text-shadow: 1px 1px 3px black;
+        color: crimson;
+        transform: scale(1.05);
+    }
+    .services .serv-content .card:hover{
+        background-color: crimson;
+        box-shadow: 4px 4px 10px black;
+        transform: scale(1.05);
+    }
+    .services .serv-content .card:hover i{
+        color: #fff;
+    }
+    .about .about-content .right a:hover{
+        background-color: transparent;
+        color: crimson;
+        transform: scale(1.05);
+    }
+    .contact .right form .button button:hover{
+        background-color: #fff;
+        transform: scale(1.05);
+        color: crimson;
+        cursor: pointer;
+    }
+    .menu-btn:hover{
+        text-shadow: 1px 1px 3px black;
+        transform: scale(1.07);
+    }
 }
 
-.services .serv-content .card:hover i{
-    color: #fff;
-}
+
 
 /* Skills section styling */
 .skills{
@@ -535,12 +549,7 @@ section{
     border-radius: 5px;
     transition: all 0.3s ease;
 }
-.contact .right form .button button:hover{
-    background-color: #fff;
-    transform: scale(1.05);
-    color: crimson;
-    cursor: pointer;
-}
+
 
 .contact .contact-content .left .icons{
     margin-top: 2em;
@@ -617,10 +626,7 @@ footer span a:hover{
         transition: 0.3s all ease;
     }
 
-    .menu-btn:hover{
-        text-shadow: 1px 1px 3px black;
-        transform: scale(1.07);
-    }
+    
 
     .menu-btn i.active::before{
         content: "\f00d";

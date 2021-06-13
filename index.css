@@ -3,6 +3,10 @@
 :root{
     --primary-color: rgb(163, 28, 46);
 }
+:active{
+    text-decoration: none;
+    outline: none;
+}
 
 *{
     margin: 0;

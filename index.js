@@ -26,7 +26,7 @@ $(document).ready(function(){
     });
     // Typing animation
     var typed = new Typed(".typing", {
-        strings: ["Software Developer", "Web Developer", "Game Programer", "Freelancer", "Computer Scientist"],
+        strings: ["Software Engineer", "Web Developer", "Game Programer", "Freelancer", "Computer Scientist"],
         typeSpeed: 120,
         backSpeed: 60,
         startDelay: 1300,
@@ -34,7 +34,7 @@ $(document).ready(function(){
         loop: true
     });
     var typed = new Typed(".typing2", {
-        strings: ["Software Developer", "Web Developer", "Game Programer", "Freelancer", "Computer Scientist"],
+        strings: ["Software Engineer", "Web Developer", "Game Programer", "Freelancer", "Computer Scientist"],
         typeSpeed: 140,
         backSpeed: 60,
         backDelay: 2000,

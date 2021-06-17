@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    document.getElementById('year').innerHTML = new Date().getFullYear();
+
     $(window).scroll(function(){
         if(this.scrollY > 400){
             $('.navbar').addClass("sticky");

@@ -115,7 +115,7 @@ h1{
 }
 
 .image-layer{
-    background-color: hsla(0, 0%, 0%, 0.55);
+    background-color: hsla(273, 50%, 50%, 0.55);;
     position: absolute;
     top: 0;
     left: 0;
